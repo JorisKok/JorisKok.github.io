@@ -4,5 +4,3 @@ title: Home
 permalink: /
 hide: true
 ---
-
-test
