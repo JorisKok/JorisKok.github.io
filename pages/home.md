@@ -2,12 +2,7 @@
 layout: home
 title: Home
 permalink: /
+hide: true
 ---
-Home
 
 test
-st
-st
-s
-ts
-t
