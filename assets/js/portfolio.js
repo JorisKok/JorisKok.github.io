@@ -4,11 +4,11 @@ let simplifiedLyrics = $('.highlighter-rouge').children().eq(0);
 traditionalLyrics.hide();
 
 
-let traditionLink = $('#simplified--traditional').children().eq(1);
-let simplifiedLink = $('#simplified--traditional').children().eq(0);
+let traditionLink = $('#simplified--traditioneel').children().eq(1);
+let simplifiedLink = $('#simplified--traditioneel').children().eq(0);
 traditionLink.css('color', 'gray');
 
-$('#simplified--traditional').click(function (e) {
+$('#simplified--traditioneel').click(function (e) {
     let target = $(e.target);
     if (target.attr('href') === '#traditional') {
         traditionalLyrics.show();
