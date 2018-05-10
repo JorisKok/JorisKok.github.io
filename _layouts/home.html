@@ -3,30 +3,43 @@ layout: default
 ---
 
 <div class="home">
-  {% if site.theme_settings.header_text %}
-  <div id="main" class="call-out"
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
-    {{ site.theme_settings.header_text }}
-  </div>
-  {% endif %}
+    {% if site.theme_settings.header_text %}
+    <div id="main" class="call-out">
+        {{ site.theme_settings.header_text }}
+    </div>
+    {% endif %}
 
-  <article>
-    <section class="post-content">{{ content }}</section>
-  </article>
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      <i class="fa fa-chevron-left"></i>
-      {{ site.theme_settings.str_previous_page }}
-    </a>
+    <article>
+        <section class="post-content">{{ content }}</section>
+        <section class="latest-videos">
+            <h5>Meeste recente videos</h5>
+
+            {% if site.portfolio.size > 5 %}
+                {% assign videos = site.portfolio | slice: -5,5 %}
+            {% else %}
+                {% assign videos = site.portfolio %}
+            {% endif %}
+
+            {% for video in videos %}
+            <p><a href="{{ site.baseurl }}{{ video.url }}">{{ video.title }}</a></p>
+            {% endfor %}
+        </section>
+    </article>
+
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">
+            <i class="fa fa-chevron-left"></i>
+            {{ site.theme_settings.str_previous_page }}
+        </a>
+        {% endif %}
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">
+            {{ site.theme_settings.str_next_page }}
+            <i class="fa fa-chevron-right"></i>
+        </a>
+        {% endif %}
+    </div>
     {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      {{ site.theme_settings.str_next_page }}
-      <i class="fa fa-chevron-right"></i>
-    </a>
-    {% endif %}
-  </div>
-  {% endif %}
 </div>

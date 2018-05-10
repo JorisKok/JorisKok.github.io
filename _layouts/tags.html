@@ -44,7 +44,6 @@ layout: page
                 {% if page.tags contains tag %}
                 <h5 class="tag-title">
                     <a href="{{ page.url | prepend: site.baseurl }}">
-                        <i class="fa fa-file-image-o" aria-hidden="true"></i>
                         {{ page.title }}
                     </a>
                     
@@ -60,7 +59,6 @@ layout: page
                 {% if post.tags contains tag %}
                 <h5 class="tag-title">
                     <a href="{{ post.url | prepend: site.baseurl }}">
-                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
                         {{ post.title }}
                     </a>
                     
@@ -76,7 +74,6 @@ layout: page
                 {% if note.tags contains tag %}
                 <h5 class="tag-title">
                     <a href="{{ site.baseurl }}{{ note.url }}">
-                        <i class="fa fa-file-o" aria-hidden="true"></i>
                         {{ note.title }}
                     </a>
                 

@@ -2,7 +2,7 @@
 layout: page
 title: Het boek
 permalink: /book/
-feature-img: "assets/img/pexels/circuit.jpeg"
+feature-img: "assets/img/background/chinese_muur.jpg"
 tags: [Boek, Chinees, Mandarijn, Traditioneel, Simplified]
 ---
 
