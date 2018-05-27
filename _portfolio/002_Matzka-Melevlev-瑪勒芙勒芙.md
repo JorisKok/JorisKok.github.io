@@ -9,10 +9,13 @@ tags: [Matzka, Melevlev, 瑪勒芙勒芙, Taiwan]
 
 ## Matzka
 
+Klik hier voor de [youtube clip](https://www.youtube.com/watch?v=MHSOhFP-wb8){:target="_blank"}.
+
 Matzka is een Taiwanese raggae band, met aboriginal roots in de Paiwan stam. 
-Deze bevindt zich voornamelijk in het zuiden van Taiwan en ze hebben een eigen [taal](https://en.wikipedia.org/wiki/Paiwan_language). 
+Deze bevindt zich voornamelijk in het zuiden van Taiwan en ze hebben een eigen [taal](https://en.wikipedia.org/wiki/Paiwan_language){:target="_blank"}. 
 De lyrics zijn dan ook een mix van Mandarijn Chinees en Paiwan (排灣語).
-Je kunt ze volgen op de [officiele faceboekpagina](https://www.facebook.com/matzka.official/).
+Je kunt ze volgen op de [officiele faceboekpagina](https://www.facebook.com/matzka.official/){:target="_blank"}.
+
  
 Zowel traditioneel als simplified. 加油！
 
